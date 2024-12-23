@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio showcasing my Machine Learning, AI, and Data Science skills">
-    <title>My Portfolio</title>
+    <title>My Dynamic Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Add AOS Animation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
+    <!-- Hero Section -->
+    <header class="hero">
         <div class="container">
-            <h1>Hello, I'm [Your Name]</h1>
-            <p>Machine Learning | AI | Data Science</p>
-            <a href="#about" class="btn">Learn More About Me</a>
+            <h1 data-aos="fade-up">Hi, I’m <span class="highlight">[Your Name]</span></h1>
+            <p data-aos="fade-up" data-aos-delay="200">Machine Learning | AI | Data Science</p>
+            <a href="#projects" class="btn" data-aos="zoom-in" data-aos-delay="400">View My Work</a>
         </div>
     </header>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="#about">About Me</a></li>
@@ -27,45 +29,57 @@
         </ul>
     </nav>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am an aspiring Machine Learning and AI developer with a passion for solving real-world problems through data-driven insights and cutting-edge technology.
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 data-aos="fade-right">About Me</h2>
+        <p data-aos="fade-left">
+            Passionate ML/AI developer solving real-world problems with data and cutting-edge technology.
         </p>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming: Python, SQL, JavaScript</li>
-            <li>Frameworks: PyTorch, TensorFlow, Scikit-learn</li>
-            <li>Tools: Docker, Kubernetes, Git</li>
-        </ul>
+    <section id="skills" class="skills">
+        <h2 data-aos="fade-right">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card" data-aos="flip-left">
+                <h3>Programming</h3>
+                <p>Python, SQL, JavaScript</p>
+            </div>
+            <div class="skill-card" data-aos="flip-right">
+                <h3>Frameworks</h3>
+                <p>PyTorch, TensorFlow, Scikit-learn</p>
+            </div>
+            <div class="skill-card" data-aos="flip-up">
+                <h3>Tools</h3>
+                <p>Docker, Kubernetes, Git</p>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Here are some of my featured projects:</p>
-        <ul>
-            <li>
-                <strong>Chatbot Using Transformers:</strong> A GPT-2-based chatbot for domain-specific tasks.
-                <a href="#">Demo</a> | <a href="#">GitHub</a>
-            </li>
-            <li>
-                <strong>Stock Price Prediction:</strong> Predict stock prices using LSTM models on historical data.
-                <a href="#">Demo</a> | <a href="#">GitHub</a>
-            </li>
-        </ul>
+    <section id="projects" class="projects">
+        <h2 data-aos="fade-up">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-aos="zoom-in">
+                <h3>Chatbot Using Transformers</h3>
+                <p>GPT-2-based chatbot for domain-specific tasks.</p>
+                <a href="#" class="btn">Demo</a>
+            </div>
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                <h3>Stock Price Prediction</h3>
+                <p>Predict stock prices using LSTM models on historical data.</p>
+                <a href="#" class="btn">Demo</a>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me via email or connect with me on LinkedIn!</p>
-        <ul>
+    <section id="contact" class="contact">
+        <h2 data-aos="fade-up">Contact Me</h2>
+        <p data-aos="fade-in" data-aos-delay="200">
+            Reach out via email or connect on LinkedIn!
+        </p>
+        <ul data-aos="fade-up">
             <li>Email: your.email@example.com</li>
             <li>LinkedIn: <a href="#">LinkedIn Profile</a></li>
             <li>GitHub: <a href="#">GitHub Profile</a></li>
@@ -76,5 +90,11 @@
     <footer>
         <p>© 2024 [Your Name]. All Rights Reserved.</p>
     </footer>
+
+    <!-- Add AOS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -8,81 +8,71 @@ body, h1, h2, p, ul, li, a {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    background: #1a1a2e;
+    color: #fff;
 }
 
-/* Header */
-header {
-    background: #333;
-    color: #fff;
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 50px 20px;
-}
-
-header h1 {
-    font-size: 2.5em;
-}
-
-header p {
-    margin: 10px 0 20px;
-}
-
-header .btn {
-    display: inline-block;
-    background: #007BFF;
     color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero .highlight {
+    color: #00d4ff;
+}
+
+.hero .btn {
+    background: #00d4ff;
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 1em;
+    color: #fff;
+    margin-top: 20px;
 }
 
-header .btn:hover {
-    background: #0056b3;
-}
-
-/* Navigation */
-nav {
-    background: #f4f4f4;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    display: inline-flex;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: #333;
-    font-size: 1.2em;
+.hero .btn:hover {
+    background: #008fb3;
 }
 
 /* Section Styling */
 section {
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+.skills-grid, .projects-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-section p, section ul {
-    font-size: 1.1em;
-    margin: 10px auto;
+.skill-card, .project-card {
+    background: #2b2d42;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover, .project-card:hover {
+    transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: #fff;
+    background: #111;
+    padding: 20px;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    color: #bbb;
 }
